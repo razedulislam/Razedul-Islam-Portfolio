@@ -1,0 +1,121 @@
+.works {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-top: 4rem;
+}
+
+.works-awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.works-awesome > :nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.works-awesome > :nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.works-awesome > :nth-child(3) {
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.hire-btn {
+    width: 8rem;
+    margin-top: 1rem;
+    height: 2rem;
+}
+.w-right {
+    position: relative;
+}
+.w-mainCircle {
+    left: 9rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: white;
+}
+.w-mainCircle > * {
+    position: relative;
+}
+.w-mainCircle > :nth-child(1) {
+    left: 6rem;
+    top: -3rem;
+}
+.w-mainCircle > :nth-child(2) {
+    left: -3rem;
+    top: -1rem;
+}
+.w-mainCircle > :nth-child(3) {
+    left: 6rem;
+    top: -7rem;
+}
+.w-mainCircle > :nth-child(4) {
+    left: 6rem;
+    top: -5rem;
+}
+.w-mainCircle > :nth-child(5) {
+    left: 15rem;
+    top: -20rem;
+}
+.w-seecircle {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    position: relative;
+    border: 5px solid rgb(247, 234, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: "none";
+    box-shadow: var(--smboxShadow);
+    background: white;
+}
+.w-seecircle > img {
+    transform: scale(0.6);
+}
+
+.w-backCircle {
+    position: relative;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+}
+.blueCircle {
+    background: blue;
+    left: 18rem;
+    top: -20rem;
+}
+.yellowCircle {
+    background: yellow;
+    left: 18rem;
+    top: -20rem;
+}
+@media screen and (max-width: 480px) {
+    .works {
+        flex-direction: column;
+        align-items: flex-end;
+        height: 42rem;
+        padding: 0;
+        gap: 5rem;
+    }
+
+    .w-mainCircle {
+        margin-right: 4rem;
+    }
+    .w-right {
+        transform: scale(0.6);
+        margin-top: 14rem;
+        position: absolute;
+    }
+}
